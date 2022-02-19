@@ -48,7 +48,13 @@ function render_footprint(res, status=200) {
 	render_page(res,
 		"pages/footprint",		// File Location
 		"Carbon Footprint",		// Page Title
-		"Footprint",			// Page Tab
+		"Carbon Footprint",		// Page Tab
 		status, 				// HTTP Status
+		"carbon",				// Page CSS
+		"carbon",				// Page Script
+		[],									 // Search Data
+		"Enter a URL for green suggestions", // Search Placeholder
+		"",									 // Previous Search
+		"Analyzing carbon footprint..."		 // Loading Text
 	);
 }
